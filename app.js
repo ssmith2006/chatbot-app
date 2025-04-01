@@ -100,7 +100,10 @@ async function sendMessageToGemini(userMessage) {
 
 SndBtn.addEventListener("click", () => {
   const message = userInput.value.trim();
-  if (message) {
+  console.log(message)
+  if (message) 
+  {
+    
     renderNewMessage("Shantel", message);
     userInput.value = "";
     sendMessageToGemini(message);
